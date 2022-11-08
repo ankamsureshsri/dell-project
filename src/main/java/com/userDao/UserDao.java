@@ -26,6 +26,7 @@ public class UserDao implements IuserDao {
 		SessionFactory sf = config.buildSessionFactory();
 
 		Session op = sf.openSession();
+		
 		Transaction tx = op.beginTransaction();
 
 		op.save(user);
